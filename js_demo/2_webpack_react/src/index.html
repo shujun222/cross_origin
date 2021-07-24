@@ -1,0 +1,18 @@
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<body>
+    <div id="root"></div>
+</body>
+
+
+<!-- 方法一：jsonp
+  相当于在html内部嵌入一段js代码, 即后端应该返回
+  1. 赋值语句, 如本例
+  2. 函数类型：getData([1, 2, 3, 4]), 然后前端再定义一个function getData(array){...}
+-->
+<script src="http://localhost:3006/api/service/getSkills">
+</script>
+<script>
+    console.log(data);
+</script>

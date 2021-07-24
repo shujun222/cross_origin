@@ -1,0 +1,16 @@
+<script>
+    function fetchClassic() {
+        fetch('/api/service/getUser')
+            .then(res => res.json())
+            .then(json => {
+                console.log("response", json);
+                document.getElementById('container').innerHTML = JSON.stringify(json);
+            });
+    }
+</script>
+
+<body>
+    我是index.html <br/>
+    <button onclick="fetchClassic()">点我2</button>
+    <div id="container"></div>
+</body>
